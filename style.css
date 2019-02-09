@@ -44,6 +44,7 @@ body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  background-image:url("aed.png");
 }
 
 .dropdown-content a {
@@ -58,8 +59,46 @@ body {
 .dropdown-content a:hover {
   background-color: red;
   transform: scale(1.1);
+  opacity:0.65;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+img
+{   position:absolute:-50px;
+	height:60%;
+	width:100%;
+	border:2px;
+}
+
+.parent{
+   position:relative;
+}
+#opacity_div{
+   background:#fff;
+   height:100%;
+   width:35%;
+   position:absolute;
+   top:0px;
+   right:0px;
+   opacity:0.5 /* manipulate to desired opacity */
+}
+img.half_fade {
+   position:absolute;
+   top:0;left:0;
+   z-index:-1000;
+}
+.container{
+	position:relative;
+	text-align:center;
+	color:white;
+	z-index:1;
+}
+.right{
+	position:absolute;
+	right:280px;
+	z-index:2;
+	top:10px;
+	color:rgb(98,34,245);
 }
